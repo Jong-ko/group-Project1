@@ -1,0 +1,16 @@
+background{
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+
+#header{
+    display: flex;
+justify-content: center;
+background-color: black;
+color: white;
+}
+
+#cardContainer{
+    display: flex;
+    background-color: black;
+}
