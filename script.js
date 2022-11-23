@@ -49,6 +49,7 @@ function insert(value) {
 function renderPlanetCard(data) {
   const planetArray = data.map(function (data) {
     const index = planetData.map(object => object.englishName).indexOf(data.englishName)
+    const index = planetData.indexOf(data.englishName);
     return `<div class="col">
         <div class="card">
           <img src="${planetData[index].thumbImg}" class="card-img-top" alt="...">
