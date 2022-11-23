@@ -1,16 +1,39 @@
-background{
+body {
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    background-color: black;
+    background-image: url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg");
 }
 
+#siteButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#intro{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 200px;
 
+}
+
+#details{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
 #header{
     display: flex;
 justify-content: center;
 background-color: black;
+background-image: url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg");
 color: white;
 }
 
 #cardContainer{
     display: flex;
     background-color: black;
+    background-image: url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg");
 }
+
