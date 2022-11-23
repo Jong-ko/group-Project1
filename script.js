@@ -51,6 +51,7 @@ function insert(value){
 
 function renderPlanetCard(data) {
   const planetArray = data.map(function (data) {
+    const index = planetData.indexOf(data.englishName);
     return `<div class="col">
         <div class="card">
           <img src="https://images.newscientist.com/wp-content/uploads/2017/06/21180000/planet-10-orange-blue-final-small.jpg" class="card-img-top" alt="...">
