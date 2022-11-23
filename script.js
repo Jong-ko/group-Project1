@@ -48,11 +48,10 @@ function insert(value) {
 
 function renderPlanetCard(data) {
   const planetArray = data.map(function (data) {
-    const index = planetData.indexOf(data.englishName);
-    console.log(index);
+    const index = planetData.map(object => object.englishName).indexOf(data.englishName)
     return `<div class="col">
         <div class="card">
-          <img src="placeholder" class="card-img-top" alt="...">
+          <img src="${planetData[index].thumbImg}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${data.englishName}</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
