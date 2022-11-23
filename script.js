@@ -37,24 +37,22 @@ Promise.all([
   ),
 ])
   .then((value) => {
-    insert(value)
-    console.log(value)
-    
-    })
+    insert(value);
+    console.log(value);
+  })
   .catch((err) => {});
 
-function insert(value){
-    for (let i = 0; i < value.length; i++) {
-        document.getElementById("cardContainer").innerHTML =
-          renderPlanetCard(value);
-}}
+function insert(value) {
+  document.getElementById("cardContainer").innerHTML = renderPlanetCard(value);
+}
 
 function renderPlanetCard(data) {
   const planetArray = data.map(function (data) {
+    const index = planetData.map(object => object.englishName).indexOf(data.englishName)
     const index = planetData.indexOf(data.englishName);
     return `<div class="col">
         <div class="card">
-          <img src="https://images.newscientist.com/wp-content/uploads/2017/06/21180000/planet-10-orange-blue-final-small.jpg" class="card-img-top" alt="...">
+          <img src="${planetData[index].thumbImg}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${data.englishName}</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -62,5 +60,5 @@ function renderPlanetCard(data) {
         </div>
       </div>`;
   });
-  return planetArray.join("")
+  return planetArray.join("");
 }

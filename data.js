@@ -48,7 +48,7 @@ var planetData = [
 
     },
     {
-        englishName: "Neputune",
+        englishName: "Neptune",
         html: "neptune.htmls",
         thumbImg: "images/neptune.png",
 
