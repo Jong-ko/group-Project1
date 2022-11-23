@@ -55,7 +55,7 @@ function renderPlanetCard(data) {
         <div class="card">
           <img src="https://images.newscientist.com/wp-content/uploads/2017/06/21180000/planet-10-orange-blue-final-small.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${data.name}</h5>
+            <h5 class="card-title">${data.englishName}</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
